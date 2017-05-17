@@ -18,10 +18,9 @@ namespace ComicBookGallery.Controllers{
                 "Inks: Victor Olazaba",
                 "Colors: Edgar Delgado",
                 "Letters: Chris Eliopoulos"
-    };
+            };
 
             return View();
         }
-
     }
 }
