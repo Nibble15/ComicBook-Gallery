@@ -8,12 +8,12 @@ namespace ComicBookGallery.Models {
 
         public int Id { get; set; }
         public string SeriesTitle { get; set; } 
-        public string IssueNumber { get; set; } 
+        public int IssueNumber { get; set; } 
         public string DescriptionHtml { get; set; }
         public Artist[] Artists { get; set; }
         public bool Favorite { get; set; }
 
-        public string DisplayText => SeriesTitle + " #" + IssueNumber;
+        public string DisplayText => $"{SeriesTitle} #{IssueNumber}";
 
         //if problem with the following property return to "updating the data Model"
         // on the treehouse mvc course and replace with his version of 
