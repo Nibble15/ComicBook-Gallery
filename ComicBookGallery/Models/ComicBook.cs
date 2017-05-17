@@ -18,8 +18,7 @@ namespace ComicBookGallery.Models {
         //if problem with the following property return to "updating the data Model"
         // on the treehouse mvc course and replace with his version of 
         // the property which is a readonly - remember that it has a getter..
-        public string CoverImageFileName => $"{SeriesTitle.Replace(" ", "-").ToLower()} " +
-                      $"- {IssueNumber} .jpg";
+        public string CoverImageFileName => $"{SeriesTitle.Replace(" ", "-").ToLower()}-{IssueNumber}.jpg";
 
     }
 }
