@@ -7,10 +7,8 @@ using System.Web.Routing;
 
 namespace ComicBookGallery
 {
-    public class RouteConfig
-    {
-        public static void RegisterRoutes(RouteCollection routes)
-        {
+    public class RouteConfig {
+        public static void RegisterRoutes(RouteCollection routes) {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
@@ -21,3 +19,6 @@ namespace ComicBookGallery
         }
     }
 }
+
+
+
