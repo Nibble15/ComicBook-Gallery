@@ -15,9 +15,12 @@ namespace ComicBookGallery.Models {
 
         public string DisplayText => $"{SeriesTitle} #{IssueNumber}";
 
-        //if problem with the following property return to "updating the data Model"
-        // on the treehouse mvc course and replace with his version of 
-        // the property which is a readonly - remember that it has a getter..
+        // NOTE: the following can also be done with the property getter syntax that the teacher used
+        //public string CoverImageFileName {
+        //    get {
+        //        return SeriesTitle.Replace(" ", "-").ToLower() + "-" + IssueNumber + ".jpg";
+        //    }
+        //} 
         public string CoverImageFileName => $"{SeriesTitle.Replace(" ", "-").ToLower()}-{IssueNumber}.jpg";
 
     }
